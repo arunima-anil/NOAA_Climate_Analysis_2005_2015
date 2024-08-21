@@ -1,4 +1,4 @@
-# NOAA_Climate_Analysis_Ann_Arbor_2005_2015
+# NOAA_Climate_Analysis_2005_2015
 
 ## Overview
 
@@ -44,7 +44,7 @@ This repository contains code and documentation for analyzing climate data. The 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+     git clone https://github.com/your-username/repository-name.git
 
 2.Navigate to the Project Directory:
  
