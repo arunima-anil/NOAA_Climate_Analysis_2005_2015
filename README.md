@@ -10,7 +10,7 @@ This repository contains code and documentation for analyzing climate data. The 
   - `temperature.csv` - Temperature records with date and temperature values.
   - `binsize.csv` - Weather station locations with IDs, latitude, and longitude.
   
-- `Climate_Data_Analysis.ipynb` - Jupyter Notebook with detailed analysis and visualizations.
+- `NOAA_Climate_Analysis_2005_2015.ipynb` - Jupyter Notebook with detailed analysis and visualizations.
 
 - `ann_arbor_stations_map.html` - Interactive map showing weather stations near Ann Arbor.
 
