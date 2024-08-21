@@ -38,8 +38,7 @@ This repository contains code and documentation for analyzing climate data. The 
 
 5. **Temperature Summary (2015)**:
    - **Objective**: Plot a temperature summary for the year 2015.
-   - **Implementation**: Analyzed 2015 temperature data to summarize and visualize the temperature trends for that year. This includes plotting and comparing against historical data to provide a comprehensive overview of 2015 temperatures.
-
+   - **Implementation**: Plotted the daily maximum and minimum temperatures for 2015, showing the temperature range with shaded areas for weather stations near Ann Arbor.
 
 ## Why Additional Modules?
 
