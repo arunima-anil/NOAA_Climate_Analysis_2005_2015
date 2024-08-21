@@ -40,30 +40,31 @@ This repository contains code and documentation for analyzing climate data. The 
 
 - **Folium**: Chosen for its ability to create interactive maps easily. This module helps in visualizing station locations effectively.
 
+##Requirements
+
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/repository-name.git
-   
+
 2.Navigate to the Project Directory:
-        
-        cd repository-name
+ 
+    cd repository-name
+    
+3.Install Required Libraries:
+Install the necessary Python packages using pip:
+
+     pip install pandas numpy matplotlib seaborn folium
 
 
 
+## License
 
-**License**
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-**Acknowledgments**
-Thanks to the creators of the folium library for interactive mapping.
-Data sources and contributors who provided the datasets.
+## Acknowledgments
 
+- Thanks to the creators of the `folium` library for interactive mapping.
+- Data sources and contributors who provided the datasets.
 
-This format will help users follow the necessary steps to set up and run the project, and it includes license and acknowledgment sections for proper attribution.
+Feel free to adjust the repository URL, license details, and acknowledgments as necessary.
 
-
-## Getting Started
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/repository-name.git
