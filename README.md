@@ -36,6 +36,10 @@ This repository contains code and documentation for analyzing climate data. The 
    - **Objective**: Visualize the locations of weather stations near Ann Arbor.
    - **Implementation**: Used the `folium` library to create an interactive map with markers for each station. This visualization helps in understanding the spatial distribution of weather data collection points.
 
+6. **Temperature Summary (2015)**:
+   -**Objective:** Plot a temperature summary for the year 2015.
+   -**Implementation:** Analyzed 2015 temperature data to summarize and visualize the temperature trends for that year. This includes plotting and comparing against historical data.
+
 ## Why Additional Modules?
 
 - **Folium**: Chosen for its ability to create interactive maps easily. This module helps in visualizing station locations effectively.
