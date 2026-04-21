@@ -1,74 +1,70 @@
-# NOAA_Climate_Analysis_2005_2015
+<div align="center">
 
-## Overview
+# NOAA Climate Analysis 2005-2015
 
-This repository contains code and documentation for analyzing climate data. The analysis covers temperature records from 2005-2015, including record highs and lows, visualization of weather stations, and a summary of 2015 temperatures. The dataset includes temperature records and station locations.
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org)
+[![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+[![Domain](https://img.shields.io/badge/Domain-Climate_Science-22c55e?style=for-the-badge)](.)
 
-## Repository Structure
+> A decade of NOAA temperature data - record highs, record lows, 2015 anomalies, and geospatial station maps.
 
-- `datasets/` - Contains the CSV files:
-  - `temperature.csv` - Temperature records with date and temperature values.
-  - `binsize.csv` - Weather station locations with IDs, latitude, and longitude.
-  
-- `NOAA_Climate_Analysis_2005_2015.ipynb` - Jupyter Notebook with detailed analysis and visualizations.
+</div>
 
-- `ann_arbor_stations_map.html` - Interactive map showing weather stations near Ann Arbor.
+---
 
-## Analysis and Logical Implementation
+## What This Project Analyses
 
-1. **Temperature Analysis (2005-2014)**:
-   - **Objective**: Plot record high and low temperatures by day of the year, with shaded areas representing temperature ranges.
-   - **Implementation**: Filtered data for the years 2005-2014, separated high and low temperatures, and used pivot tables to get daily records. Visualized the data with a line graph and shaded the area between record highs and lows.
-   
-2. **Record Breakers (2015)**:
-   - **Objective**: Highlight temperatures from 2015 that exceeded or fell below the 2005-2014 records.
-   - **Implementation**: Overlaid scatter plots on the 2005-2014 temperature graph to indicate broken records in 2015. This helps visualize how 2015 temperatures compared to historical records.
-   
-3. **Leap Days**:
-   - **Objective**: Exclude February 29th (leap days) from the analysis to avoid skewing the results.
-   - **Implementation**: Filtered out leap days from the dataset to ensure accurate daily comparisons.
-   
-4. **Plot Enhancements**:
-   - **Objective**: Improve readability by adding clear legends, labels, and minimizing chart junk.
-   - **Implementation**: Adjusted plot elements to enhance clarity and focus on data. Added legends, axis labels, and a grid with a clean design.
-   
-5. **Weather Stations Map**:
-   - **Objective**: Visualize the locations of weather stations near Ann Arbor.
-   - **Implementation**: Used the `folium` library to create an interactive map with markers for each station. This visualization helps in understanding the spatial distribution of weather data collection points.
+Using real NOAA weather station data from Ann Arbor, Michigan (2005-2015):
 
-5. **Temperature Summary (2015)**:
-   - **Objective**: Plot a temperature summary for the year 2015.
-   - **Implementation**: Plotted the daily maximum and minimum temperatures for 2015, showing the temperature range with shaded areas for weather stations near Ann Arbor.
+- What were the **record high and low temperatures** for each day of the year?
+- Did any day in **2015 break a 10-year record**?
+- How are weather stations **geographically distributed**?
 
-## Why Additional Modules?
+---
 
-- **Folium**: Chosen for its ability to create interactive maps easily. This module helps in visualizing station locations effectively.
+## Visualisations
 
-##Requirements
+| Plot | What It Shows |
+|---|---|
+| Temperature Range Chart | Daily record highs and lows (2005-2014 baseline) with 2015 overlay |
+| Station Map | Interactive HTML map of NOAA monitoring locations |
+| Anomaly Scatter | Days where 2015 broke the 10-year record highlighted in colour |
 
-1. **Clone the Repository**:
-   ```bash
-     git clone https://github.com/your-username/repository-name.git
+---
 
-2.Navigate to the Project Directory:
- 
-    cd repository-name
-    
-3.Install Required Libraries:
-Install the necessary Python packages using pip:
+## Dataset
 
-     pip install pandas numpy matplotlib seaborn folium
+```
+datasets/
+├── temperature.csv   - Daily min/max temps per station, 2005-2015
+└── BinSize.csv       - Station metadata and geographic coordinates
+```
 
+Source: **NOAA Global Historical Climatology Network (GHCN)**
 
+---
 
-## License
+## Tech Stack
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+pandas      - data loading, groupby, pivot operations
+numpy       - numerical processing
+matplotlib  - multi-layer temperature range plots
+folium      - interactive geospatial station map
+```
 
-## Acknowledgments
+---
 
-- Thanks to the creators of the `folium` library for interactive mapping.
-- Data sources and contributors who provided the datasets.
+## Run Locally
 
-Feel free to adjust the repository URL, license details, and acknowledgments as necessary.
+```bash
+git clone https://github.com/arunima-anil/NOAA_Climate_Analysis_2005_2015
+cd NOAA_Climate_Analysis_2005_2015
+pip install pandas numpy matplotlib folium jupyter
+jupyter notebook NOAA_Climate_Analysis_2005_2015.ipynb
+```
 
+---
+
+<div align="center">Built as part of AI & Data Science portfolio | <a href="https://github.com/arunima-anil">@arunima-anil</a></div>
